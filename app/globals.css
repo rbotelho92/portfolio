@@ -1,0 +1,237 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Paleta de cores retrô inspirada nos anos 80/90 */
+  --background: #0a0a0a;
+  --foreground: #f5f5dc;
+  --card: #1a1a1a;
+  --card-foreground: #f5f5dc;
+  --popover: #1a1a1a;
+  --popover-foreground: #f5f5dc;
+  --primary: #ff6b35;
+  --primary-foreground: #0a0a0a;
+  --secondary: #2d1b69;
+  --secondary-foreground: #f5f5dc;
+  --muted: #2a2a2a;
+  --muted-foreground: #a0a0a0;
+  --accent: #f72585;
+  --accent-foreground: #f5f5dc;
+  --destructive: #e63946;
+  --destructive-foreground: #f5f5dc;
+  --border: #333333;
+  --input: #2a2a2a;
+  --ring: #ff6b35;
+  --chart-1: #ff6b35;
+  --chart-2: #f72585;
+  --chart-3: #4cc9f0;
+  --chart-4: #7209b7;
+  --chart-5: #560bad;
+  --radius: 0.25rem;
+  --sidebar: #1a1a1a;
+  --sidebar-foreground: #f5f5dc;
+  --sidebar-primary: #ff6b35;
+  --sidebar-primary-foreground: #0a0a0a;
+  --sidebar-accent: #2a2a2a;
+  --sidebar-accent-foreground: #f5f5dc;
+  --sidebar-border: #333333;
+  --sidebar-ring: #ff6b35;
+}
+
+.dark {
+  --background: #0a0a0a;
+  --foreground: #f5f5dc;
+  --card: #1a1a1a;
+  --card-foreground: #f5f5dc;
+  --popover: #1a1a1a;
+  --popover-foreground: #f5f5dc;
+  --primary: #ff6b35;
+  --primary-foreground: #0a0a0a;
+  --secondary: #2d1b69;
+  --secondary-foreground: #f5f5dc;
+  --muted: #2a2a2a;
+  --muted-foreground: #a0a0a0;
+  --accent: #f72585;
+  --accent-foreground: #f5f5dc;
+  --destructive: #e63946;
+  --destructive-foreground: #f5f5dc;
+  --border: #333333;
+  --input: #2a2a2a;
+  --ring: #ff6b35;
+  --chart-1: #ff6b35;
+  --chart-2: #f72585;
+  --chart-3: #4cc9f0;
+  --chart-4: #7209b7;
+  --chart-5: #560bad;
+  --sidebar: #1a1a1a;
+  --sidebar-foreground: #f5f5dc;
+  --sidebar-primary: #ff6b35;
+  --sidebar-primary-foreground: #0a0a0a;
+  --sidebar-accent: #2a2a2a;
+  --sidebar-accent-foreground: #f5f5dc;
+  --sidebar-border: #333333;
+  --sidebar-ring: #ff6b35;
+}
+
+@theme inline {
+  /* Configurando fontes retrô */
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-jetbrains-mono);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    /* Adicionando textura de fundo retrô */
+    background-image: radial-gradient(circle at 1px 1px, rgba(255, 107, 53, 0.15) 1px, transparent 0);
+    background-size: 20px 20px;
+  }
+}
+
+/* Scrollbar retrô com cores vibrantes */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #ff6b35, #f72585);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #f72585, #ff6b35);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Efeitos retrô para cards de vídeo */
+.video-card {
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.video-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 107, 53, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.video-card:hover::before {
+  left: 100%;
+}
+
+.video-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(255, 107, 53, 0.3);
+}
+
+/* Efeitos de texto neon */
+.neon-text {
+  text-shadow: 0 0 5px currentColor, 0 0 10px currentColor, 0 0 15px currentColor, 0 0 20px #ff6b35;
+}
+
+/* Animação de scan lines retrô */
+@keyframes scanlines {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+.scanlines::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #ff6b35, transparent);
+  animation: scanlines 3s linear infinite;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+/* Botões com estilo retrô */
+.retro-button {
+  background: linear-gradient(45deg, #ff6b35, #f72585);
+  border: 2px solid #ff6b35;
+  position: relative;
+  overflow: hidden;
+}
+
+.retro-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.3s;
+}
+
+.retro-button:hover::before {
+  left: 100%;
+}
+
+/* Grid pattern overlay */
+.grid-overlay {
+  background-image: linear-gradient(rgba(255, 107, 53, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 107, 53, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
