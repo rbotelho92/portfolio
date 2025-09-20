@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+
 @custom-variant dark (&:is(.dark *));
 
 :root {
@@ -11,33 +12,33 @@
   --card-foreground: #f5f5dc;
   --popover: #1a1a1a;
   --popover-foreground: #f5f5dc;
-  --primary: #ff6b35;
+  --primary: #7a00ff;
   --primary-foreground: #0a0a0a;
-  --secondary: #2d1b69;
+  --secondary: #9c00ff;
   --secondary-foreground: #f5f5dc;
   --muted: #2a2a2a;
   --muted-foreground: #a0a0a0;
-  --accent: #f72585;
+  --accent: #ce00ff;
   --accent-foreground: #f5f5dc;
   --destructive: #e63946;
   --destructive-foreground: #f5f5dc;
   --border: #333333;
   --input: #2a2a2a;
-  --ring: #ff6b35;
-  --chart-1: #ff6b35;
-  --chart-2: #f72585;
-  --chart-3: #4cc9f0;
-  --chart-4: #7209b7;
-  --chart-5: #560bad;
+  --ring: #7a00ff;
+  --chart-1: #7a00ff;
+  --chart-2: #9c00ff;
+  --chart-3: #9c00ff;
+  --chart-4: #ce00ff;
+  --chart-5: #7a00ff;
   --radius: 0.25rem;
   --sidebar: #1a1a1a;
   --sidebar-foreground: #f5f5dc;
-  --sidebar-primary: #ff6b35;
+  --sidebar-primary: #7a00ff;
   --sidebar-primary-foreground: #0a0a0a;
   --sidebar-accent: #2a2a2a;
   --sidebar-accent-foreground: #f5f5dc;
   --sidebar-border: #333333;
-  --sidebar-ring: #ff6b35;
+  --sidebar-ring: #7a00ff;
 }
 
 .dark {
@@ -47,32 +48,32 @@
   --card-foreground: #f5f5dc;
   --popover: #1a1a1a;
   --popover-foreground: #f5f5dc;
-  --primary: #ff6b35;
+  --primary: #7a00ff;
   --primary-foreground: #0a0a0a;
   --secondary: #2d1b69;
   --secondary-foreground: #f5f5dc;
   --muted: #2a2a2a;
   --muted-foreground: #a0a0a0;
-  --accent: #f72585;
+  --accent: #ce00ff;
   --accent-foreground: #f5f5dc;
   --destructive: #e63946;
   --destructive-foreground: #f5f5dc;
   --border: #333333;
   --input: #2a2a2a;
-  --ring: #ff6b35;
-  --chart-1: #ff6b35;
-  --chart-2: #f72585;
-  --chart-3: #4cc9f0;
-  --chart-4: #7209b7;
-  --chart-5: #560bad;
+  --ring: #7a00ff;
+  --chart-1: #7a00ff;
+  --chart-2: #9c00ff;
+  --chart-3: #9c00ff;
+  --chart-4: #ce00ff;
+  --chart-5: #7a00ff;
   --sidebar: #1a1a1a;
   --sidebar-foreground: #f5f5dc;
-  --sidebar-primary: #ff6b35;
+  --sidebar-primary: #7a00ff;
   --sidebar-primary-foreground: #0a0a0a;
   --sidebar-accent: #2a2a2a;
   --sidebar-accent-foreground: #f5f5dc;
   --sidebar-border: #333333;
-  --sidebar-ring: #ff6b35;
+  --sidebar-ring: #7a00ff;
 }
 
 @theme inline {
@@ -121,6 +122,7 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
     /* Adicionando textura de fundo retrô */
@@ -139,12 +141,12 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(45deg, #ff6b35, #f72585);
+  background: linear-gradient(45deg, #7a00ff, #9c00ff);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(45deg, #f72585, #ff6b35);
+  background: linear-gradient(45deg, #9c00ff, #7a00ff);
 }
 
 html {
@@ -165,7 +167,7 @@ html {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 107, 53, 0.2), transparent);
+  background: linear-gradient(90deg, transparent, rgba(122, 0, 255, 0.2), transparent);
   transition: left 0.5s;
 }
 
@@ -175,12 +177,12 @@ html {
 
 .video-card:hover {
   transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 20px 40px rgba(255, 107, 53, 0.3);
+  box-shadow: 0 20px 40px rgba(122, 0, 255, 0.3);
 }
 
 /* Efeitos de texto neon */
 .neon-text {
-  text-shadow: 0 0 5px currentColor, 0 0 10px currentColor, 0 0 15px currentColor, 0 0 20px #ff6b35;
+  text-shadow: 0 0 5px currentColor, 0 0 10px currentColor, 0 0 15px currentColor, 0 0 20px #7a00ff;
 }
 
 /* Animação de scan lines retrô */
@@ -188,6 +190,7 @@ html {
   0% {
     transform: translateY(-100%);
   }
+
   100% {
     transform: translateY(100vh);
   }
@@ -200,7 +203,7 @@ html {
   left: 0;
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg, transparent, #ff6b35, transparent);
+  background: linear-gradient(90deg, transparent, #7a00ff, transparent);
   animation: scanlines 3s linear infinite;
   pointer-events: none;
   z-index: 1000;
@@ -208,8 +211,8 @@ html {
 
 /* Botões com estilo retrô */
 .retro-button {
-  background: linear-gradient(45deg, #ff6b35, #f72585);
-  border: 2px solid #ff6b35;
+  background: linear-gradient(45deg, #7a00ff, #9c00ff);
+  border: 2px solid #7a00ff;
   position: relative;
   overflow: hidden;
 }
@@ -231,7 +234,7 @@ html {
 
 /* Grid pattern overlay */
 .grid-overlay {
-  background-image: linear-gradient(rgba(255, 107, 53, 0.1) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 107, 53, 0.1) 1px, transparent 1px);
+  background-image: linear-gradient(rgba(122, 0, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(122, 0, 255, 0.1) 1px, transparent 1px);
   background-size: 50px 50px;
 }

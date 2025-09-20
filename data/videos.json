@@ -2,7 +2,7 @@
   "demoreel": {
     "title": "Demo Reel 2024",
     "description": "Uma seleção dos meus melhores trabalhos de edição de vídeo",
-    "videoUrl": "/placeholder.svg?height=400&width=700",
+    "videoUrl": "https://www.youtube.com/watch?v=pds4aaZR5Vw&list=PLX4nlKAzvzvgd1D_5vmIRG9M0NHTHqaGg&index=1",
     "duration": "2:30"
   },
   "stats": {
@@ -14,69 +14,78 @@
   "projects": [
     {
       "id": 1,
-      "title": "Canal Tech Review",
-      "category": "YouTube Long Form",
-      "client": "TechMaster",
-      "description": "Série de reviews de tecnologia com motion graphics e transições dinâmicas",
-      "thumbnail": "/placeholder.svg?height=300&width=500",
-      "views": "2.5M",
-      "duration": "12:45",
-      "tags": ["Motion Graphics", "Color Grading", "Sound Design"]
+      "category": "long video",
+      "video": {
+        "thumbnailUrl": "https://uploads.dailydot.com/2024/11/honse-meme.jpg?q=65&auto=format&w=800&ar=2:1&fit=crop",
+        "originalUrl": "https://www.youtube.com/watch?v=pds4aaZR5Vw&list=PLX4nlKAzvzvgd1D_5vmIRG9M0NHTHqaGg&index=1"
+      }
     },
     {
       "id": 2,
-      "title": "Campanha Produto",
-      "category": "Commercial",
-      "client": "Brand Studio",
-      "description": "Vídeo promocional para lançamento de produto com estética cinematográfica",
-      "thumbnail": "/placeholder.svg?height=300&width=500",
-      "views": "1.8M",
-      "duration": "1:30",
-      "tags": ["Cinematography", "VFX", "Brand Identity"]
+      "category": "long video",
+      "video": {
+        "thumbnailUrl": "https://uploads.dailydot.com/2024/11/honse-meme.jpg?q=65&auto=format&w=800&ar=2:1&fit=crop",
+        "originalUrl": "https://www.youtube.com/watch?v=FC1jngBKLKI&list=PLX4nlKAzvzvgd1D_5vmIRG9M0NHTHqaGg&index=2&t=597s"
+      }
     },
     {
       "id": 3,
-      "title": "Lifestyle Vlog",
-      "category": "YouTube Long Form",
-      "client": "LifeWithSara",
-      "description": "Vlogs semanais com storytelling envolvente e correção de cor natural",
-      "thumbnail": "/placeholder.svg?height=300&width=500",
-      "views": "800K",
-      "duration": "15:20",
-      "tags": ["Storytelling", "Color Correction", "Audio Mix"]
+      "category": "long video",
+      "video": {
+        "thumbnailUrl": "https://uploads.dailydot.com/2024/11/honse-meme.jpg?q=65&auto=format&w=800&ar=2:1&fit=crop",
+        "originalUrl": "https://www.youtube.com/watch?v=NtqBxfGELsw&list=PLX4nlKAzvzvgd1D_5vmIRG9M0NHTHqaGg&index=5"
+      }
     },
     {
       "id": 4,
-      "title": "Gaming Highlights",
-      "category": "YouTube Shorts",
-      "client": "ProGamer",
-      "description": "Compilação de melhores momentos com efeitos visuais e sincronização musical",
-      "thumbnail": "/placeholder.svg?height=300&width=500",
-      "views": "5.2M",
-      "duration": "0:45",
-      "tags": ["Fast Cuts", "VFX", "Music Sync"]
+      "category": "shorts",
+      "video": {
+        "originalUrl": "https://www.youtube.com/shorts/hbv1rFmrv4g"
+      }
+    },
+    {
+      "id": 4,
+      "category": "shorts",
+      "video": {
+        "originalUrl": "https://www.youtube.com/shorts/hbv1rFmrv4g"
+      }
+    },
+    {
+      "id": 4,
+      "category": "shorts",
+      "video": {
+        "originalUrl": "https://www.youtube.com/shorts/hbv1rFmrv4g"
+      }
+    },
+    {
+      "id": 4,
+      "category": "shorts",
+      "video": {
+        "originalUrl": "https://www.youtube.com/shorts/hbv1rFmrv4g"
+      }
+    },
+    {
+      "id": 4,
+      "category": "shorts",
+      "video": {
+        "originalUrl": "https://www.youtube.com/shorts/hbv1rFmrv4g"
+      }
     },
     {
       "id": 5,
-      "title": "Tutorial Culinário",
-      "category": "Instagram Reels",
-      "client": "ChefMaster",
-      "description": "Receitas rápidas com foco em food styling e transições criativas",
-      "thumbnail": "/placeholder.svg?height=300&width=500",
-      "views": "3.1M",
-      "duration": "0:30",
-      "tags": ["Food Styling", "Quick Cuts", "Typography"]
+      "category": "long video",
+      "video": {
+        "thumbnailUrl": "https://uploads.dailydot.com/2024/11/honse-meme.jpg?q=65&auto=format&w=800&ar=2:1&fit=crop",
+        "originalUrl": "https://www.youtube.com/watch?v=pds4aaZR5Vw&list=PLX4nlKAzvzvgd1D_5vmIRG9M0NHTHqaGg&index=1"
+      }
     },
     {
       "id": 6,
-      "title": "Documentário Corporativo",
-      "category": "Corporate",
-      "client": "Innovation Corp",
-      "description": "História da empresa com entrevistas e b-roll cinematográfico",
-      "thumbnail": "/placeholder.svg?height=300&width=500",
-      "views": "450K",
-      "duration": "8:15",
-      "tags": ["Documentary", "Interviews", "B-Roll"]
+      "category": "long video",
+      "video": {
+        "thumbnailUrl": "https://uploads.dailydot.com/2024/11/honse-meme.jpg?q=65&auto=format&w=800&ar=2:1&fit=crop",
+        "originalUrl": "https://www.youtube.com/watch?v=pds4aaZR5Vw&list=PLX4nlKAzvzvgd1D_5vmIRG9M0NHTHqaGg&index=1"
+      }
     }
   ],
   "services": [
@@ -114,24 +123,18 @@
   "testimonials": [
     {
       "name": "Ana Silva",
-      "role": "Content Creator",
-      "company": "@anasilva",
-      "text": "Trabalhar com ele transformou completamente a qualidade dos meus vídeos. A atenção aos detalhes é impressionante!",
-      "avatar": "/placeholder.svg?height=60&width=60"
+      "avatar": "https://uploads.dailydot.com/2024/11/honse-meme.jpg?q=65&auto=format&w=800&ar=2:1&fit=crop",
+      "socialMedia": "https://instagram.com/anasilva"
     },
     {
       "name": "Carlos Mendes",
-      "role": "Marketing Director",
-      "company": "TechStart",
-      "text": "Profissional excepcional! Entregou nossa campanha antes do prazo com qualidade cinematográfica.",
-      "avatar": "/placeholder.svg?height=60&width=60"
+      "avatar": "https://uploads.dailydot.com/2024/11/honse-meme.jpg?q=65&auto=format&w=800&ar=2:1&fit=crop",
+      "socialMedia": "https://instagram.com/carlosmendes"
     },
     {
       "name": "Mariana Costa",
-      "role": "YouTuber",
-      "company": "@marianacosta",
-      "text": "Meus vídeos nunca tiveram tantas visualizações! O trabalho dele realmente faz a diferença.",
-      "avatar": "/placeholder.svg?height=60&width=60"
+      "avatar": "https://uploads.dailydot.com/2024/11/honse-meme.jpg?q=65&auto=format&w=800&ar=2:1&fit=crop",
+      "socialMedia": "https://instagram.com/mariancosta"
     }
   ]
 }
